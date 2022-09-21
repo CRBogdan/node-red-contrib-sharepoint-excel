@@ -1,5 +1,10 @@
 {
   "name": "node-red-contrib-sharepoint-excel",
+  "node-red": {
+    "nodes": {
+      "node-red-contrib-sharepoint-excel-read": "node-red-contrib-sharepoint-excel.js"
+    }
+  },
   "version": "0.1.0",
   "description": "A node-red node that can read a excel from sharepoint and exports an array of objects",
   "main": "sharepoint-excel-read.js",

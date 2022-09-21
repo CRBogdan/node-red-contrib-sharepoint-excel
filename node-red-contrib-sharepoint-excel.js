@@ -39,7 +39,7 @@ module.exports = function (RED) {
       const wb = new excel.Workbook();
       let spr = sprequest.create(credentialOptions);
       let objectToSend = [];
-      let sheetToSend = [];
+      let sheets = [];
       let tableHeader = {
         rowIndex: 0,
         colIndex: [],
@@ -72,12 +72,13 @@ module.exports = function (RED) {
                 isFirst = false;
               });
 
-              sheetToSend.push({
+              sheets.push({
                 sheetName: sheet.name,
                 table: objectToSend,
               });
             });
-            node.send(sheetToSend);
+            msg.payload = sheets;
+            node.send(msg);
           });
         });
     });
