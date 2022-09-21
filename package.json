@@ -1,0 +1,30 @@
+{
+  "name": "node-red-contrib-sharepoint-excel",
+  "version": "0.1.0",
+  "description": "A node-red node that can read a excel from sharepoint and exports an array of objects",
+  "main": "sharepoint-excel-read.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRBogdan/node-red-contrib-sharepoint-excel.git"
+  },
+  "keywords": [
+    "node-red",
+    "excel",
+    "sharepoint",
+    "read",
+    "node"
+  ],
+  "author": "Carabet Razvan Bogdan",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/CRBogdan/node-red-contrib-sharepoint-excel/issues"
+  },
+  "homepage": "https://github.com/CRBogdan/node-red-contrib-sharepoint-excel#readme",
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "sp-request": "^3.0.0"
+  }
+}
