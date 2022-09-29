@@ -53,6 +53,7 @@ module.exports = function (RED) {
               let isFirst = true;
               sheet.eachRow((row, rowNum) => {
                 let tempObj = {};
+                objectToSend = [];
 
                 if (isFirst == true) {
                   tableHeader.rowIndex = rowNum;
